@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma</title>
+</head>
+<body>
+    <script>
+        var PABP = 90;
+        var BInggris = 90;
+        var BIndonesia = 80;
+        var RataRata =(PABP + BInggris + BIndonesia) / 3;
+        
+        if (RataRata >= 90) {
+            console.log ("A");
+        }else if (RataRata >= 80) {
+            console.log ("B");
+        }else if (RataRata >= 70) {
+            console.log ("C");
+        }else {
+            console.log ("D");
+        }
+        var panjang = 20;
+        var lebar = 10;
+        var luas = panjang * lebar;
+        console.log (luas);
+        
+        let r = 7;
+        var sisa = r % 7;
+        if (sisa == 0) {
+            var Phi = 22/7
+        } else {
+            var Phi = 3.14
+        }
+        var luas = (Phi) * r * r;
+        console.log (`Hasilnya adalah ${luas}`)
+        
+        var panjang = 200;
+        var lebar = 150;
+        var keliling = 2 * (panjang + lebar);
+        console.log (keliling)
+        
+        var alas = 70;
+        var tinggi = 40;
+        var luas = alas * tinggi * (1/2);
+        console.log (luas)
+        
+        var umur = 17;
+        
+        if (umur >= 17) {
+            console.log ("Boleh Nonton");
+        } else {
+            console.log ("Tidak Boleh Nonton");
+        }
+        
+        var JamLembur = 10 ;
+
+        if (JamLembur < 6) {
+            console.log ("Rp. 100.000");
+        } else if (JamLembur == 6 ) {
+            console.log ("Rp. 200.000");
+        } else {
+            console.log ("Rp. 300.000");
+        }
+
+        var Bambu = prompt("Harga Bambu Satu Iket = Rp. 10000, Beli Berapa ?") ;
+        var BatuBata = prompt("Harga Batu Bata Satu Karung = Rp. 23000, Beli Berapa ?");
+        var Pasir = prompt("Harga Batu Bata Satu Karung = Rp. 31000, Beli Berapa ?");
+        var Bambu = Bambu * 10000;
+        var BatuBata = BatuBata * 23000;
+        var Pasir = Pasir * 31000;
+        var TotHar = (Bambu + BatuBata + Pasir);
+
+        if (TotHar > 100000) {
+            var PotHar = TotHar - (TotHar * (10/100));
+            alert(`Total harganya adalah Rp. ${TotHar}`);
+            alert(`Karena anda belanja lebih dari Rp. 100000, maka anda mendapatkan potongan harga 10%`)
+            alert(`Sehingga total harga setelah mendapatkan potongan harga adalah Rp. ${PotHar}`)
+        } else {
+            alert(`Total harganya adalah Rp. ${TotHar}`);
+        }
+        
+        var VIP = 36;
+
+        if (VIP <= 50) {
+            var VIP = VIP;
+        } else {
+            var VIP = 50;
+        }
+
+        var HarVIP = 35000 * VIP;
+
+        if (VIP >= 35) {
+            KeunVIP = HarVIP * (25/100);
+        } else if (VIP >= 20 && VIP < 35) {
+            KeunVIP = HarVIP * (15/100);
+        } else {
+            KeunVIP = HarVIP * (5/100);
+        }
+
+        var Eks = 41;
+
+        if (Eks <= 50) {
+            var Eks = Eks;
+        } else {
+            var Eks = 50;
+        }
+
+        var HarEks = 25000 * Eks; 
+
+        if (Eks >= 40) {
+            KeunEks = HarEks * (20/100);
+        } else if (Eks >=20 && Eks < 40) {
+            KeunEks = HarEks * (10/100);
+        } else {
+            KeunEks = HarEks * (2/100);
+        }
+
+        var Eko = 50;
+
+        if (Eko <= 50) {
+            var Eko = Eko;
+        } else {
+            var Eko = 50;
+        }
+
+        var HarEko = 20000 * Eko ;
+
+        KeunEko = HarEko * (7/100);
+
+        var TotUn = KeunVIP + KeunEks + KeunEko;
+        var Jumlah = HarVIP + HarEks + HarEko;
+        console.log ("Keuntungan VIP = Rp. " + KeunVIP)
+        console.log ("Keuntungan Eksekutif = Rp. " + KeunEks)
+        console.log ("Keuntungan Ekonomi = Rp. " + KeunEko)
+        console.log ("Total Keuntungan = Rp. " + TotUn)
+        console.log ("Jumlah VIP = Rp. " + HarVIP)
+        console.log ("Jumlah Eksekutif = Rp. " + HarEks)
+        console.log ("Jumlah Ekonomi = Rp. " + HarEko)
+        console.log ("Total Jumlah = Rp. " + Jumlah)
+
+    </script>
+</body>
+</html>
