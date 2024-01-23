@@ -24,6 +24,28 @@
         for (var bil = 1;bil <= 20; bil++) {
             console.log(bil)
         }
+
+        let fahrenheit = 89
+        celcius = (fahrenheit - 32) * 5/9
+        if (celcius > 30) {
+            console.log ("Panassssss")
+        } else if(celcius <= 30 && celcius >= 25) {
+            console.log ("Yang normal-normal aja ye kan")
+        } else {
+            console.log ("Dingin bet")
+        }
+
+        let terbesar = 0;
+        
+        for (let b = 1;b <= 30; b++) {
+            let a = Math.floor(Math.random()*10);
+            if (a > terbesar){
+                terbesar = a
+            } else {
+                terbesar = terbesar
+            }
+        }
+        console.log (terbesar + " terbesar")
     </script>
 </body>
 </html>

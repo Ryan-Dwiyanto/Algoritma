@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let MTK = 70;
+        let PABP = 82;
+        let DPK = 77;
+        var RataRata =(PABP + MTK + DPK) / 3;
+        if (RataRata >= 80) {
+            console.log ("A");
+        }else if (RataRata >= 75) {
+            console.log ("B");
+        }else if (RataRata >= 65) {
+            console.log ("C");
+        }else if (RataRata >= 45) {
+            console.log ("D");
+        }else if (RataRata >= 0){
+            console.log ("E");
+        }else {
+            console.log ("K");
+        }
+
+        let pegawai = 22505197803;
+        No = pegawai % 100;
+        Thn = Math.floor(pegawai/100) % 10000;
+        Bln = Math.floor(pegawai/1000000) % 100;
+        Tgl = Math.floor(pegawai/100000000) % 100;
+        Gol = Math.floor(pegawai/10000000000)
+        switch (Bln) {
+            case 1 :
+                Bln = "Januari";
+                break;
+            case 2 :
+                Bln = "Februari";
+                break;
+            case 3 :
+                Bln = "Maret";
+                break;
+            case 4 :
+                Bln = "April";
+                break;
+            case 5 :
+                Bln = "Mei";
+                break;
+            case 6 :
+                Bln = "Juni";
+                break;
+            case 7 :
+                Bln = "Juli";
+                break;
+            case 8 :
+                Bln = "Agustus";
+                break;
+            case 9 :
+                Bln = "September";
+                break;
+            case 10 :
+                Bln = "Oktober";
+                break;
+            case 11 :
+                Bln = "November";
+                break;
+            case 12 :
+                Bln = "Desember";
+                break;
+        }
+        console.log(Gol, Tgl, Bln, Thn, No)
+        
+        function tambahSatuDetik(waktu) {
+            let [jam, menit, detik] = waktu.split(':').map(Number);
+
+            if (detik < 59) {
+                detik += 1;
+            } else {
+                detik = 0;
+                if (menit < 59) {
+                    menit += 1;
+                } else {
+                    menit = 0;
+                    if (jam < 23) {
+                        jam += 1;
+                    } else {
+                        jam = 0;
+                    }
+                }
+            }
+
+            return `${jam.toString().padStart(2, '0')}:${menit.toString().padStart(2, '0')}:${detik.toString().padStart(2, '0')}`;
+        }
+
+        let waktu1 = '02:13:23';
+        let waktu2 = '02:13:59';
+        let waktu3 = '02:59:59';
+        let waktu4 = '23:59:59';
+
+        console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu1)}`);
+        console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu2)}`);
+        console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu3)}`);
+        console.log(`Setelah penambahan 1 detik: ${tambahSatuDetik(waktu4)}`);
+    </script>
+</body>
+</html>

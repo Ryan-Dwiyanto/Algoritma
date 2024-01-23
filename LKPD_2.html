@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nama = "Fariteri";
+        let gaji_pokok = 2450000;
+        tunj = 20/100 * gaji_pokok;
+        pjk = 15/100 * (gaji_pokok + tunj);
+        gaji_bersih = gaji_pokok + tunj - pjk;
+        console.log (nama);
+        console.log (tunj);
+        console.log (pjk);
+        console.log (gaji_bersih);
+
+        let j = 1;
+        let m = 30;
+        let d = 40;
+        total = j * 3600 + m *60 + d;
+        console.log(total);
+        
+        let total1 = 5440;
+        j = Math.floor(total1/3600);
+        total2 = total1 % 3600;
+        m = Math.floor(total2/60);
+        d = total2 % 60;
+        console.log(j + " Jam " + m + " Menit " + d + " Detik ");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let brt = 2;
+        g = brt * 1000;
+        hrg = g / 100 * 500;
+        dskn = hrg * 5/100;
+        hrg_dskn = hrg - dskn;
+        console.log (hrg, dskn, hrg_dskn);
+
+        let bil = 1234567;
+        satuan = bil % 10;
+        puluhan = Math.floor (bil / 10) % 10;
+        ratusan = Math.floor (bil / 100) % 10;
+        console.log (satuan, puluhan, ratusan);
+        
+        
+        let fahrenheit = 89
+        celcius = (fahrenheit - 32) * 5/9
+        if (celcius > 30) {
+            console.log ("Panassssss")
+        } else if(celcius <= 30 && celcius >= 25) {
+            console.log ("Yang normal-normal aja ye kan")
+        } else {
+            console.log ("Dingin bet")
+        }
+
+    </script>
+</body>
+</html>
