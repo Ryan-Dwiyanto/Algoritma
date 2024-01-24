@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bil prima
+        var bil = 12;
+        var pmbg = 0;
+        for (var w = 1; w <= bil; w++) {
+            if (bil % w == 0){
+                pmbg ++
+            }
+        }
+        
+        if (pmbg == 2){
+            console.log("Prima")
+        } else {
+            console.log("Bukan Prima")
+        }
+
+        // Gabut
+        for (var bil = 1;bil <= 20; bil++) {
+            console.log(bil)
+        }
+
+        
+        let fahrenheit = 89
+        celcius = (fahrenheit - 32) * 5/9
+        if (celcius > 30) {
+            console.log ("Panassssss")
+        } else if(celcius <= 30 && celcius >= 25) {
+            console.log ("Yang normal-normal aja ye kan")
+        } else {
+            console.log ("Dingin bet")
+        }
+        // for
+        for (let z = 1; z <= 10; z++){
+            if (z % 2 == 1){
+                console.log (z + " Ganjil")
+            } else {
+                console.log (z + " Genap")
+            }
+        }
+
+        // do - while
+        let a = 1
+        do {
+            if (a % 2 == 0){
+                console.log (a + " Genap")
+            } else {
+                console.log (a + " Ganjil")
+            }
+            a++
+        } while (a <= 10)
+
+        //while
+        let i = 1
+        while (i <=10){
+            if (i % 2 == 0){
+                console.log (i + " Genap")
+            } else {
+                console.log (i + " Ganjil")
+            }
+            i++
+        }
+
+        // // for
+        // let Hasil = 1
+        // let n = prompt("isi angka")
+        // for (let q = 1; q <= n; q++){
+        //     Hasil *= q;
+        // }
+        // console.log ( Hasil )
+
+        // //while
+        // let Hasil = 1;
+        // let n = prompt("isi angka");
+        // let q = 1;
+        // while (q <= n){
+        //     Hasil *= q
+        //     q++
+        // }
+        // console.log ( Hasil )
+
+        // // do-while
+        // let Hasil = 1;
+        // let n = prompt("isi angka");
+        // let q = 1;
+        // do{
+        //     Hasil *= q
+        //     q++
+        // }while (q <= n) 
+        // console.log ( Hasil )
+
+        // //for
+        // for (let Tahun = 1600; Tahun <= 2024; Tahun++){
+        //     if ( Tahun % 400 == 0){
+        //         console.log (`${Tahun} tahun kabisat`)
+        //     } else if (Tahun % 100 == 0){
+        //         console.log (`${Tahun} bukan tahun kabisat`)
+        //     } else if (Tahun % 4 == 0) {
+        //         console.log (`${Tahun} tahun kabisat`)
+        //     } 
+        // }
+
+        // //while
+        // let Tahun = 1600;
+        // while (Tahun <= 2024) {
+        //     if ( Tahun % 400 == 0){
+        //         console.log (`${Tahun} tahun kabisat`)
+        //     } else if (Tahun % 100 == 0){
+        //         console.log (`${Tahun} bukan tahun kabisat`)
+        //     } else if (Tahun % 4 == 0) {
+        //         console.log (`${Tahun} tahun kabisat`)
+        //     } 
+        //     Tahun ++
+        // }
+    </script>
+</body>
+</html>
