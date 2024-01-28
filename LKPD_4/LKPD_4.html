@@ -25,47 +25,47 @@
             console.log ("K");
         }
 
-        let pegawai = 22505197803;
-        No = pegawai % 100;
-        Thn = Math.floor(pegawai/100) % 10000;
-        Bln = Math.floor(pegawai/1000000) % 100;
-        Tgl = Math.floor(pegawai/100000000) % 100;
-        Gol = Math.floor(pegawai/10000000000)
+        let pegawai = "22505197803";
+        No = pegawai.slice(-2);
+        Thn = pegawai.slice(-6, -2);
+        Bln = pegawai.slice(3,5);
+        Tgl = pegawai.slice(1,3);
+        Gol = pegawai.slice(0,1);
         switch (Bln) {
-            case 1 :
+            case "01" :
                 Bln = "Januari";
                 break;
-            case 2 :
+            case "02" :
                 Bln = "Februari";
                 break;
-            case 3 :
+            case "03" :
                 Bln = "Maret";
                 break;
-            case 4 :
+            case "04" :
                 Bln = "April";
                 break;
-            case 5 :
+            case "05" :
                 Bln = "Mei";
                 break;
-            case 6 :
+            case "06" :
                 Bln = "Juni";
                 break;
-            case 7 :
+            case "07" :
                 Bln = "Juli";
                 break;
-            case 8 :
+            case "08" :
                 Bln = "Agustus";
                 break;
-            case 9 :
+            case "09" :
                 Bln = "September";
                 break;
-            case 10 :
+            case "10" :
                 Bln = "Oktober";
                 break;
-            case 11 :
+            case "11" :
                 Bln = "November";
                 break;
-            case 12 :
+            case "12" :
                 Bln = "Desember";
                 break;
         }
